@@ -6,7 +6,7 @@ README = open('README.rst').read()
 
 # This call to setup() does all the work
 setup(
-    name="mptt_wagtail5",
+    name="mptt_wagtail",
     version="1.0.0",
     description="A Django app to integrate mptt to wagtail admin.",
     long_description=README,
