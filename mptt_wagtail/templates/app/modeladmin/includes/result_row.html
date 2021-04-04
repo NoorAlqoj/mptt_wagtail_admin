@@ -1,0 +1,8 @@
+{% load modeladmin_tags customized_modeladmin_tags %}
+
+<tr{{ row_attrs }}>
+    {% for item in result %}
+      {% customize_result_row_value_display forloop.counter0 %} 
+    {% endfor %}
+</tr>
+

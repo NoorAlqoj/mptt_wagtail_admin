@@ -1,0 +1,21 @@
+{% extends "modeladmin/index.html" %}
+{% load static i18n modeladmin_tags wagtailadmin_tags %}
+
+{% block css %}
+    {{ block.super }}
+    {{ media.css }}
+{% endblock %}
+
+{% block extra_js %}
+    {{ block.super }}
+    {{ media.js }}
+{% endblock %}
+
+{% block result_list %}
+<form method="post" novalidate>
+{% csrf_token %}
+<div id="result_list" >
+{{ block.super }}
+</div>
+ </form>
+{% endblock %}
